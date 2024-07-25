@@ -10,15 +10,26 @@ header {
     color: white;
     text-align: center;
     padding: 2em 0;
+    position: relative;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    left: calc(50% - 75px);
+    border: 5px solid white;
 }
 
 header h1 {
-    margin: 0;
+    margin-top: 1em;
     font-size: 2.5em;
 }
 
 header p {
-    margin: 0;
+    margin: 0.5em 0 0;
     font-size: 1.2em;
 }
 
@@ -76,21 +87,29 @@ ul li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
+.achievement-photos, .achievement-documents {
+    margin-top: 1em;
 }
 
-a:hover {
+.achievement-photos img, .achievement-documents a {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.achievement-photos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.achievement-documents a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.achievement-documents a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+a {
+    color:
