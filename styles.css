@@ -28,25 +28,51 @@ header {
     border: 3px solid white;
 }
 
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    background-color: #0a9396;
-}
+ /* Reset spacing and box model */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav {
+      width: 100%;
+      background-color: #0a9396;
+    }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-}
+    /* Base styles for the list */
+    nav ul {
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping on small screens */
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    /* Mobile-style layout for small screens */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+
+
 
 /* Sections */
 .section {
@@ -80,4 +106,35 @@ nav ul li a {
             list-style-type: none;
             padding: 0; /* Optional: Remove default padding */
             margin: 0;  /* Optional: Remove default margin */
+        }
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 255, 102);
+}
+
+/* contact */
+section contact {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background-color: #0a9396;
+}
+
+li {    
+            padding-left: 2.5px;
         }
